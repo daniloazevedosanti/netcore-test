@@ -122,11 +122,13 @@ namespace Api
             //Dependency Injection
             services.AddScoped<IMedicDomain, MedicDomainImpl>();
             services.AddScoped<IPatientDomain, PatientDomainImpl>();
+            services.AddScoped<IConsultationDomain, ConsultationDomainImpl>();
 
 
             services.AddScoped<IUserRepository, UserRepositoryImpl>();
             services.AddScoped<IMedicRepository, MedicRepositoryImpl>();
             services.AddScoped<IPatientRepository, PatientRepositoryImpl>();
+            services.AddScoped<IConsultationRepository, ConsultationRepositoryImpl>();
 
             //Dependency Injection of GenericRepository
             services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
