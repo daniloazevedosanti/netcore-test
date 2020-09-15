@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dan\\source\\repos\\ServicosMedicos\\Api\\Api.csproj": {}
+    "C:\\Users\\Dan\\Desktop\\CursoDockerAWS\\test-dotnet\\netcore-test\\Api\\Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dan\\source\\repos\\ServicosMedicos\\Api\\Api.csproj": {
+    "C:\\Users\\Dan\\Desktop\\CursoDockerAWS\\test-dotnet\\netcore-test\\Api\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dan\\source\\repos\\ServicosMedicos\\Api\\Api.csproj",
+        "projectUniqueName": "C:\\Users\\Dan\\Desktop\\CursoDockerAWS\\test-dotnet\\netcore-test\\Api\\Api.csproj",
         "projectName": "Api",
-        "projectPath": "C:\\Users\\Dan\\source\\repos\\ServicosMedicos\\Api\\Api.csproj",
+        "projectPath": "C:\\Users\\Dan\\Desktop\\CursoDockerAWS\\test-dotnet\\netcore-test\\Api\\Api.csproj",
         "packagesPath": "C:\\Users\\Dan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dan\\source\\repos\\ServicosMedicos\\Api\\obj\\",
+        "outputPath": "C:\\Users\\Dan\\Desktop\\CursoDockerAWS\\test-dotnet\\netcore-test\\Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,13 +41,49 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.AspNetCore.Hosting": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Versioning": {
+              "target": "Package",
+              "version": "[4.1.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[3.1.8, )"
             },
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
               "version": "[6.7.1, )"
+            },
+            "Microsoft.SqlServer.Types": {
+              "target": "Package",
+              "version": "[14.0.1016.290, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[5.6.0, )"
+            },
+            "Swashbuckle.Core": {
+              "target": "Package",
+              "version": "[5.6.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
             }
           },
           "imports": [
