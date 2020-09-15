@@ -87,9 +87,6 @@ C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\bin\Debug\netco
 C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\obj\Debug\netcoreapp3.1\Api.AssemblyInfoInputs.cache
 C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\obj\Debug\netcoreapp3.1\Api.AssemblyInfo.cs
-C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\obj\Debug\netcoreapp3.1\Api.csproj.CoreCompileInputs.cache
-C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\obj\Debug\netcoreapp3.1\Api.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\obj\Debug\netcoreapp3.1\Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\obj\Debug\netcoreapp3.1\Api.RazorTargetAssemblyInfo.cache
 C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\obj\Debug\netcoreapp3.1\Api.csproj.CopyComplete
 C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\obj\Debug\netcoreapp3.1\staticwebassets\Api.StaticWebAssets.Manifest.cache
@@ -97,3 +94,8 @@ C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\obj\Debug\netco
 C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\obj\Debug\netcoreapp3.1\Api.dll
 C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\obj\Debug\netcoreapp3.1\Api.pdb
 C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\obj\Debug\netcoreapp3.1\Api.genruntimeconfig.cache
+C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\obj\Debug\netcoreapp3.1\Api.csprojAssemblyReference.cache
+C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\obj\Debug\netcoreapp3.1\Api.csproj.CoreCompileInputs.cache
+C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\obj\Debug\netcoreapp3.1\Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\obj\Debug\netcoreapp3.1\Api.MvcApplicationPartsAssemblyInfo.cache

@@ -10,12 +10,12 @@ namespace Api.Repository.Generic
     public class GenericRepository<T> : IRepository<T> where T : BaseEntity
     {
 
-        protected readonly MySQLContext _context;
+        protected readonly Context _context;
 
         // Declaração de um dataset genérico
         private DbSet<T> dataset;
 
-        public GenericRepository(MySQLContext context)
+        public GenericRepository(Context context)
         {
             _context = context;
             dataset = _context.Set<T>();

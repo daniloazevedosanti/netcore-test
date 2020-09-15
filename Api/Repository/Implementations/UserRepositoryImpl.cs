@@ -9,9 +9,9 @@ namespace Api.Repository.Implementations
 {
     public class UserRepositoryImpl : IUserRepository
     {
-        private readonly MySQLContext _context;
+        private readonly Context _context;
 
-        public UserRepositoryImpl(MySQLContext context)
+        public UserRepositoryImpl(Context context)
         {
             _context = context;
         }

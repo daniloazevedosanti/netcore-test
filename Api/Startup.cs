@@ -24,14 +24,11 @@ namespace Api
 {
     public class Startup
     {
-        private readonly ILogger _logger;
         public IConfiguration _configuration { get; }
-        public IHostingEnvironment _environment { get; }
-        public Startup(IConfiguration configuration, IHostingEnvironment environment, ILogger<Startup> logger)
+        public Startup(IConfiguration configuration)
         {
             _configuration = configuration;
-            _environment = environment;
-            _logger = logger;
+           
             //Configuration = configuration;
         }
 
@@ -41,8 +38,8 @@ namespace Api
         public void ConfigureServices(IServiceCollection services)
         {
             //Connection to database
-            var connectionString = _configuration["MySqlConnection:MySqlConnectionString"];
-            services.AddDbContext<MySQLContext>(options => options.UseSqlServer(connectionString));
+            var connectionString = _configuration["Connection:ConnectionString"];
+            services.AddDbContext<Context>(options => options.UseSqlServer(connectionString));
             services.AddControllers();
 
             //Adding Migrations Support

@@ -10,7 +10,7 @@ namespace Api.Repository.Implementations
 {
     public class MedicRepositoryImpl : GenericRepository<Medic>, IMedicRepository
     {
-        public MedicRepositoryImpl(MySQLContext context) : base(context) { }
+        public MedicRepositoryImpl(Context context) : base(context) { }
 
         public List<Medic> FindByName(string firstName)
         {
