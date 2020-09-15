@@ -96,6 +96,12 @@ C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\obj\Debug\netco
 C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\obj\Debug\netcoreapp3.1\Api.genruntimeconfig.cache
 C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\obj\Debug\netcoreapp3.1\Api.csprojAssemblyReference.cache
 C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\bin\Debug\netcoreapp3.1\Api.xml
+C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
+C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\bin\Debug\netcoreapp3.1\DocumentFormat.OpenXml.dll
+C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\bin\Debug\netcoreapp3.1\System.IO.Packaging.dll
 C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\obj\Debug\netcoreapp3.1\Api.csproj.CoreCompileInputs.cache
 C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\obj\Debug\netcoreapp3.1\Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Dan\Desktop\CursoDockerAWS\test-dotnet\netcore-test\Api\obj\Debug\netcoreapp3.1\Api.MvcApplicationPartsAssemblyInfo.cache

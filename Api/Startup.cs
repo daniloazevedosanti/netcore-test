@@ -15,8 +15,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.Extensions.PlatformAbstractions;
 using Microsoft.OpenApi.Models;
+using Swashbuckle.Swagger;
 using System;
+using System.ComponentModel;
+using System.IO;
 using System.Net.Http.Headers;
 using IHostingEnvironment = Microsoft.AspNetCore.Hosting.IHostingEnvironment;
 
@@ -28,7 +32,7 @@ namespace Api
         public Startup(IConfiguration configuration)
         {
             _configuration = configuration;
-           
+
             //Configuration = configuration;
         }
 
@@ -41,9 +45,6 @@ namespace Api
             var connectionString = _configuration["Connection:ConnectionString"];
             services.AddDbContext<Context>(options => options.UseSqlServer(connectionString));
             services.AddControllers();
-
-            //Adding Migrations Support
-            // ExecuteMigrations(connectionString);
 
             var signingConfigurations = new SigningConfigurations();
             services.AddSingleton(signingConfigurations);
@@ -94,22 +95,38 @@ namespace Api
             services.AddApiVersioning(option => option.ReportApiVersions = true);
 
             //Add Swagger Service
-            /*services.AddSwaggerGen(c =>
+            services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1",
-                    new Info
+                    new OpenApiInfo
                     {
                         Title = "Serviços Médicos -  Consultas e Marcações  .NET Core 3.1",
-                        Version = "v1"
+                        Version = "v1",
+                        Contact = new OpenApiContact
+                        {
+                            Name = "Danilo Azevedo", Email = "danilo.azevedosanti@gmail.com",
+                            Url = new Uri("https://github.com/daniloazevedosanti")
+                        }
                     });
-            });*/
+
+                string caminhoAplicacao =
+                    PlatformServices.Default.Application.ApplicationBasePath;
+                string nomeAplicacao =
+                    PlatformServices.Default.Application.ApplicationName;
+                string caminhoXmlDoc =
+                    Path.Combine(caminhoAplicacao, $"{nomeAplicacao}.xml");
+
+                c.IncludeXmlComments(caminhoXmlDoc);
+            });
 
             //Dependency Injection
             services.AddScoped<IMedicDomain, MedicDomainImpl>();
-            
+            services.AddScoped<IPatientDomain, PatientDomainImpl>();
+
 
             services.AddScoped<IUserRepository, UserRepositoryImpl>();
             services.AddScoped<IMedicRepository, MedicRepositoryImpl>();
+            services.AddScoped<IPatientRepository, PatientRepositoryImpl>();
 
             //Dependency Injection of GenericRepository
             services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
@@ -133,6 +150,14 @@ namespace Api
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            // Ativando middlewares para uso do Swagger
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json",
+                    "Sistemas de Marcação e Consultas Médicas");
             });
         }
     }

@@ -41,6 +41,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[2.11.3, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[3.1.8, )"
@@ -77,6 +81,10 @@
               "target": "Package",
               "version": "[3.1.8, )"
             },
+            "Microsoft.Extensions.PlatformAbstractions": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
               "version": "[6.7.1, )"
@@ -84,6 +92,10 @@
             "Microsoft.SqlServer.Types": {
               "target": "Package",
               "version": "[14.0.1016.290, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.0, )"
             },
             "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",
